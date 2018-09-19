@@ -1,0 +1,227 @@
+body{
+    background-color: gray;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+    width: auto;
+    height: 70px;
+    background-color: #014c01;
+}
+
+.logo {
+    background-image: url(https://cdn2.iconfinder.com/data/icons/productivity/256/To_Do_List-512.png);
+    width: 70px;
+    height: 100%;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: 7px;
+    filter: brightness(100);
+    float: left;
+}
+
+.logo-title {
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 2em;
+}
+
+button {
+    float: right;
+    margin-right: 2%;
+    margin: 23px;
+    font-size: 1em;
+    border-radius: 4px;
+    color: white;
+    background-color: #014c01;
+    cursor: pointer;
+}
+
+.container {
+    padding: 2%;
+}
+
+.col {
+    float: left;
+    width: 49%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.done{
+    float: right;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.col-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+li {
+    height: 50px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+}
+
+li div {
+    height: 100%;
+    line-height: 50px;
+    float: left;
+}
+
+.task-state {
+    width: 50px;
+    float: left;
+    text-align: center;
+}
+
+.task-title {
+    width: calc(100% - 100px);
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.task-options {
+    width: 50px;
+    float: right;
+    text-align: center;
+}
+
+i.far.fa-trash-alt {
+    cursor: pointer;
+}
+
+#newTaskMobile{
+    display:none;
+    border: none;
+    font-size: 2em;
+    line-height: 70px;
+    margin: 0;
+    height: 100%;
+    margin-right: 2%;
+}
+
+.check{
+    cursor: pointer;
+}
+
+.footer {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.popup-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-form {
+    height: 70%;
+    width: 70%;
+    background-color: white;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.formSwitcher {
+    float: right;
+    font-size: 1.8em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #0c4c01;
+    margin-top: -30px;
+    margin-right: -40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.addNewTask {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    padding: 5px;
+    margin-bottom: 0.6em;
+}
+
+.inputInfo {
+    width: calc(100% - 20px);
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5em;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#done{
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+button#add {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: calc(100% - 48px);
+    height: 40px;
+}
+
+input::placeholder {
+    padding: 10px;
+}
+
+.popup-holder{
+    display: none;
+}
+
+.noTasks {
+    text-align: center;
+    font-style: italic;
+    opacity: .6;
+}
+
+@media screen and (max-width: 600px){
+    .col{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    #newTask{
+        display: none;  
+    }
+    #newTaskMobile{
+        display: block;
+    }
+}
+
+

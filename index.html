@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Zadania</title>
+	<meta name="description" content="Opis w Google" />
+	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+	<link rel="stylesheet" href="./style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo"></div>
+		<div class="logo-title">Zadania</div>
+		<button id="newTask">Dodaj nowe zadanie</button>
+		<button id="newTaskMobile">
+				<i class="fas fa-plus-circle"></i>
+		</button>
+	</div>
+	<div class="container">
+		<div class="col todo">	
+			<div class="col-title">Zadania do zrobienia</div>
+			<ul id="todoTaskList">		
+			</ul>
+		</div>
+		<div class="col done">	
+			<div class="col-title">Zadania wykonane</div>
+			<ul id="doneTaskList">
+			</ul>
+		</div>
+	</div>
+
+	<div class="popup-holder">
+		<div class="popup-form">
+			<div class="formSwitcher">
+				<i class="far fa-window-close"></i>
+			</div>
+			<div class="addNewTask">Dodaj nowe zadanie</div>
+			<label for="title">Tytuł zadania</label>
+			<input type="text" id="title" class="inputInfo" placeholder="Tytuł">
+			<label for="description">Opis zadania</label>
+			<input type="text" id="description" class="inputInfo" placeholder="Opis">
+			<label class="checkstatus">Czy zadanie zostało wykonane?</label>
+			<input type="checkbox" id="done">
+			<button id="add">Dodaj zadanie</button>
+
+		</div>
+	</div>
+	<div class="footer">Sylwia Suligowska &#x24D2 2018</div>
+</body>
+
+<script type="text/javascript" src="./assets/js/jquery.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+</html>
